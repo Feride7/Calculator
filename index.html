@@ -1,15 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <title>Basic Calculator</title>
+    <meta name="description" content="My basic calculator." />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+    <div id="main">
+        <div id="resultBg">
+            <div id="result"></div>
+        </div>
 
+        <div id="numbers">
+            <button value="1" class="num">1</button>
+            <button value="2" class="num">2</button>
+            <button value="3" class="num">3</button>
+            <button value="4" class="num">4</button>
+            <button value="5" class="num">5</button>
+            <button value="6" class="num">6</button>
+            <button value="7" class="num">7</button>
+            <button value="8" class="num">8</button>
+            <button value="9" class="num">9</button>
+            <button value="0" class="num">0</button>
+            <button id="dot" class="num">.</button>
+            <button id="percent" class="num">%</button>
+        </div>
+
+        <div id="operators">
+            <button value="+" class="operator ">+</button>
+            <button value="-" class="operator ">-</button>
+            <button value="*" class="operator ">x</button>
+            <button value="/" class="operator ">/</button>
+        </div>
+        <div class="clear"></div>
+        <div id="resultOperators">
+
+            <button class="resultOperator" id="delete">C</button>
+            <button class="resultOperator" id="equation">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
